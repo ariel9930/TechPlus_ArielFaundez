@@ -1,26 +1,157 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*navbar-imagen-titulo*/
-.titulo-imagen img{
+
+.carrusel-contenedor {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#imagen-carrusel {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.btn-carrusel {
+    background-color: #616161;
+    color: white;
+    border: none;
+    padding: 10px 17px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+
+.titulo-imagen img {
     width: 80px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-imagen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.azul {
+    color: #0054ef;
+}
+
+.links-inicios {
+    display: flex;
+    gap: 50px;
+}
+
+.links-inicios a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.inputin {
+    padding-right: 30px;
+    display: flex;
+}
+
+.inputin input {
+    width: 300px;
+    border-radius: 3px;
+    border: none;
+    border: solid 1px rgb(129, 129, 129);
+
+}
+
+.azul-buscar {
+    background-color: #0054ef;
+    border: none;
+    height: 40px;
+    width: 90px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
 /*navbar-imagen-titulo*/
 
+.container {
+    background-color: #f6f7f9;
+}
+
 
 /*imagenes-soporte*/
-.imagenes-soporte img{
-    width: 500px;
+.soporte-soluciones-imagenes {
+    display: flex;
+    margin: 25px;
+    padding-left: 25px;
+    gap: 80px;
+    padding: 20px;
 }
+
+.imagenes-soporte img {
+    width: 600px;
+}
+
+.soporte-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.soporte-texto h1 {
+    font-size: 60px;
+}
+
+.ver-servicios {
+    width: 160px;
+    height: 35px;
+    color: white;
+    background-color: #30302f;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
 /*imagenes-soporte*/
+
+
+
 
 /*nuestros-servicios*/
-.nuestros-servicios img{
+.nuestros-servicios img {
     width: 300px;
 }
+
 /*nuestros-servicios*/
+
+
+
+
+
+/*Ultimos proyectos*/
+.ultimos-proyectos img {
+    width: 300px;
+}
+
+.corazon img {
+    width: 20px;
+}
+
+/*Ultimos proyectos*/

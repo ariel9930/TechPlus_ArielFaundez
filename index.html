@@ -30,48 +30,105 @@
                 <button class="azul-buscar">Buscar</button>
             </div>
         </nav>
-        <main class="container">
-            <section class="soporte-soluciones-imagenes">
-                <div class="soporte-texto">
-                    <p>SOPORTE Y SOLUCIONES</p>
-                    <h1>Tecnología que<br>impulsa tu negocio</h1>
-                    <p>Soporte, desarrollo y asesoría informática<br>para empresas y personas.</p>
-                    <button class="ver-servicios">Ver servicios ➔</button>
-                </div>
-                <div class="imagenes-soporte">
-                    <img src="static/img/soporte_soluciones.webp" alt="soporte">
-                </div>
-            </section>
-            <section class="nuestros-servicios">
-                <h2>Nuestros servicios</h2>
-                <div class="SOPORTE_TECNICO-TEXTO">
-                    <img src="static/img/soporte-tecnico.jpg" alt="tecnico">
-                    <h3>Soporte técnico</h3>
-                    <p>Mantención, diagnóstico<br>y soluciones rápidas.</p>
-                    <button class="Ver-mas">Ver más</button>
-                </div>
-                <div class="SOPORTE_TECNICO-TEXTO1">
-                    <img src="static/img/redes_conectividad.jpg" alt="redes">
-                    <h3>Redes y conectividad</h3>
-                    <p>Instalación y configuración<br>de redes corporativas.</p>
-                    <button class="Ver-mas">Ver más</button>
-                </div>
-                <div class="SOPORTE_TECNICO-TEXTO2">
-                    <img src="static/img/desarrollo-web.jpg" alt="desarrollo-web">
-                    <h3>Desarrollo web</h3>
-                    <p>Sitios web modernos<br>y funcionales.</p>
-                    <button class="Ver-mas">Ver más</button>
-                </div>
-                <div class="SOPORTE_TECNICO-TEXTO3">
-                    <img src="static/img/blog-seguridad-informatica.webp" alt="seguridad">
-                    <h3>Seguridad informática</h3>
-                    <p>Protección de datos<br> y asesoría en ciberseguridad.</p>
-                    <button class="Ver-mas">Ver más</button>
-                </div>
-            </section>
-        </main>
     </header>
+    <main class="container">
+        <section class="soporte-soluciones-imagenes">
+            <div class="soporte-texto">
+                <p>SOPORTE Y SOLUCIONES</p>
+                <h1>Tecnología que impulsa tu negocio</h1>
+                <p>Soporte, desarrollo y asesoría informática<br>para empresas y personas.</p>
+                <button class="ver-servicios">Ver servicios ➔</button>
 
+            </div>
+            <div class="imagenes-soporte">
+                <div class="carrusel-contenedor">
+
+                    <!-- Botón Izquierdo (resta 1) -->
+                    <button onclick="cambiarImagen(-1)" class="btn-carrusel">❮</button>
+
+                    <!-- Imagen central -->
+                    <img id="imagen-carrusel" src="https://picsum.photos/id/1018/600/400" alt="Paisaje">
+
+                    <!-- Botón Derecho (suma 1) -->
+                    <button onclick="cambiarImagen(1)" class="btn-carrusel">❯</button>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="nuestros-servicios">
+            <h2>Nuestros servicios</h2>
+            <div class="SOPORTE_TECNICO-TEXTO">
+                <img src="static/img/soporte-tecnico.jpg" alt="tecnico">
+                <h3>Soporte técnico</h3>
+                <p>Mantención, diagnóstico<br>y soluciones rápidas.</p>
+                <button class="Ver-mas">Ver más</button>
+            </div>
+            <div class="SOPORTE_TECNICO-TEXTO1">
+                <img src="static/img/redes_conectividad.jpg" alt="redes">
+                <h3>Redes y conectividad</h3>
+                <p>Instalación y configuración<br>de redes corporativas.</p>
+                <button class="Ver-mas">Ver más</button>
+            </div>
+            <div class="SOPORTE_TECNICO-TEXTO2">
+                <img src="static/img/desarrollo-web.jpg" alt="desarrollo-web">
+                <h3>Desarrollo web</h3>
+                <p>Sitios web modernos<br>y funcionales.</p>
+                <button class="Ver-mas">Ver más</button>
+            </div>
+            <div class="SOPORTE_TECNICO-TEXTO3">
+                <img src="static/img/blog-seguridad-informatica.webp" alt="seguridad">
+                <h3>Seguridad informática</h3>
+                <p>Protección de datos<br> y asesoría en ciberseguridad.</p>
+                <button class="Ver-mas">Ver más</button>
+            </div>
+        </section>
+
+        <section class="ultimos-proyectos">
+            <div class="ultimo-texto">
+                <h2>Últimos proyectos</h2>
+                <p>Ver todos ➔</p>
+            </div>
+            <div class="ULITMOS-PROYECTOS1">
+                <div class="sitio-texto1">
+                    <p>Sitio web</p>
+                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
+                            alt="corazon-pelao"> 24</button>
+                </div>
+                <div class="ultimos-proyectos-imagen1">
+                    <img src="static/img/clinica-vida.png" alt="clinica">
+                    <h3>Clínica Vida</h3>
+                    <p>Sitio web corporativo con formulario de contacto.</p>
+                </div>
+            </div>
+
+            <div class="ULITMOS-PROYECTOS2">
+                <div class="sitio-texto2">
+                    <p>Redes</p>
+                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
+                            alt="corazon-pelao"> 17</button>
+                </div>
+                <div class="ultimos-proyectos-imagen2">
+                    <img src="static/img/clinica-vida.png" alt="comercial norte">
+                    <h3>Comercial Norte</h3>
+                    <p>Implementación de red y seguridad.</p>
+                </div>
+            </div>
+
+            <div class="ULITMOS-PROYECTOS3">
+                <div class="sitio-texto3">
+                    <p>Soporte</p>
+                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
+                            alt="corazon-pelao"> 31</button>
+                </div>
+                <div class="ultimos-proyectos-imagen3">
+                    <img src="static/img/clinica-vida.png" alt="clinica">
+                    <h3>Colegio Los Robles</h3>
+                    <p>Mantención y soporte técnico.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="static/js/script.js"></script>
 </body>
 
