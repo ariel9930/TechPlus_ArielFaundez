@@ -10,8 +10,8 @@
 .carrusel-contenedor {
     display: flex;
     align-items: center;
-    padding: 20px;
 }
+
 #imagen-carrusel {
     width: 500px;
     height: 300px;
@@ -92,13 +92,14 @@
 
 .container {
     background-color: #f6f7f9;
+    padding: 40px;
 }
 
 
 /*imagenes-soporte*/
 .soporte-soluciones-imagenes {
     display: flex;
-    margin: 25px;
+
     padding-left: 25px;
     gap: 80px;
     padding: 20px;
@@ -135,23 +136,224 @@
 
 
 /*nuestros-servicios*/
-.nuestros-servicios img {
-    width: 300px;
+.nuestros-servicios {
+    display: flex;
+    gap: 40px;
+    padding-top: 15px;
 }
 
+.nuestros-servicios img {
+    width: 250px;
+    height: 150px;
+}
+
+/*soporte*/
+.SOPORTE_TECNICO-TEXTO {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Ver-mas {
+    border: none;
+    background-color: #f6f7f9;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 35px;
+    font-weight: bold;
+}
+
+/*soporte*/
+
+/*soporte1*/
+.SOPORTE_TECNICO-TEXTO1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+/*soporte1*/
+
+/*soporte2*/
+.SOPORTE_TECNICO-TEXTO2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+/*soporte2*/
+.achedos h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*soporte3*/
+.SOPORTE_TECNICO-TEXTO3 img {
+    width: 254px;
+}
+
+.SOPORTE_TECNICO-TEXTO3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+/*soporte3*/
 /*nuestros-servicios*/
-
-
-
+.ULITMOS-PROYECTOS1{
+    display: flex;
+    position: relative;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ULITMOS-PROYECTOS2{
+    display: flex;
+    position: relative;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ULITMOS-PROYECTOS3{
+    display: flex;
+    position: relative;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 
 /*Ultimos proyectos*/
+
+.ultimo-texto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.ver-todos{
+    color: #0054ef;
+    font-weight: bold;
+    margin-right: 55px;
+}
 .ultimos-proyectos img {
-    width: 300px;
+    width: 320px;
 }
 
 .corazon img {
     width: 20px;
 }
+.corazon{
+    border-radius: 5px;
+    border: none;
+    border: solid 1px gray;
+    background-color: white;
+}
+.ultimos-proyectos{
+    display: flex;
+    gap: 80px;
+    margin-top: 15px;
+}
+.ultimos-proyectos-imagen1{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+.ultimos-proyectos-imagen2{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+
+.ultimos-proyectos-imagen3{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*sitio-texto1*/
+.sitio-texto1{
+    display: flex;
+    position: absolute;
+}
+.sitio-texto1 p{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.sitio-texto1-mini1{
+    display: flex;
+    position: absolute;
+    right:-235px;
+}
+/*sitio-texto1*/
+
+/*sitio-texto2*/
+.sitio-texto2{
+    display: flex;
+    position: absolute;
+}
+.sitio-texto2 p{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.sitio-texto1-mini2{
+        display: flex;
+    position: absolute;
+    right:-254px;
+}
+/*sitio-texto2*/
+
+/*sitio-texto3*/
+.sitio-texto3{
+    display: flex;
+    position: absolute;
+}
+.sitio-texto3 p{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.sitio-texto1-mini3{
+        display: flex;
+    position: absolute;
+    right:-244px;
+}
+/*sitio-texto3*/
 
 /*Ultimos proyectos*/
