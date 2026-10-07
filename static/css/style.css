@@ -10,6 +10,7 @@
 .carrusel-contenedor {
     display: flex;
     align-items: center;
+
 }
 
 #imagen-carrusel {
@@ -40,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .titulo-imagen {
@@ -56,6 +58,12 @@
 .links-inicios {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+}
+
+.subrayado {
+    border-bottom: solid 3px blue;
+    padding-bottom: 8px;
 }
 
 .links-inicios a {
@@ -93,16 +101,17 @@
 .container {
     background-color: #f6f7f9;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
 
 /*imagenes-soporte*/
 .soporte-soluciones-imagenes {
     display: flex;
-
     padding-left: 25px;
     gap: 80px;
     padding: 20px;
+
 }
 
 .imagenes-soporte img {
@@ -114,6 +123,7 @@
     flex-direction: column;
     gap: 15px;
     font-size: 25px;
+    flex-wrap: wrap;
 }
 
 .soporte-texto h1 {
@@ -212,21 +222,23 @@
 
 /*soporte3*/
 /*nuestros-servicios*/
-.ULITMOS-PROYECTOS1{
+.ULITMOS-PROYECTOS1 {
     display: flex;
     position: relative;
     border: solid 1px black;
     padding: 10px;
     border-radius: 5px;
 }
-.ULITMOS-PROYECTOS2{
+
+.ULITMOS-PROYECTOS2 {
     display: flex;
     position: relative;
     border: solid 1px black;
     padding: 10px;
     border-radius: 5px;
 }
-.ULITMOS-PROYECTOS3{
+
+.ULITMOS-PROYECTOS3 {
     display: flex;
     position: relative;
     border: solid 1px black;
@@ -237,18 +249,19 @@
 
 /*Ultimos proyectos*/
 
-.ultimo-texto{
+.ultimo-texto {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     font-size: 20px;
 }
 
-.ver-todos{
+.ver-todos {
     color: #0054ef;
     font-weight: bold;
     margin-right: 55px;
 }
+
 .ultimos-proyectos img {
     width: 320px;
 }
@@ -256,104 +269,148 @@
 .corazon img {
     width: 20px;
 }
-.corazon{
+
+.corazon {
     border-radius: 5px;
     border: none;
     border: solid 1px gray;
     background-color: white;
 }
-.ultimos-proyectos{
+
+.ultimos-proyectos {
     display: flex;
     gap: 80px;
     margin-top: 15px;
 }
-.ultimos-proyectos-imagen1{
+
+.ultimos-proyectos-imagen1 {
     display: flex;
-    flex-direction:column;
-    gap: 5px;
-}
-.ultimos-proyectos-imagen2{
-    display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 5px;
 }
 
-.ultimos-proyectos-imagen3{
+.ultimos-proyectos-imagen2 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.ultimos-proyectos-imagen3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 /*sitio-texto1*/
-.sitio-texto1{
+.sitio-texto1 {
     display: flex;
     position: absolute;
 }
-.sitio-texto1 p{
+
+.sitio-texto1 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 15px;
     padding: 10px;
     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.sitio-texto1-mini1{
+
+.sitio-texto1-mini1 {
     display: flex;
     position: absolute;
-    right:-235px;
+    right: -235px;
 }
+
 /*sitio-texto1*/
 
 /*sitio-texto2*/
-.sitio-texto2{
+.sitio-texto2 {
     display: flex;
     position: absolute;
 }
-.sitio-texto2 p{
+
+.sitio-texto2 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 15px;
     padding: 10px;
     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.sitio-texto1-mini2{
-        display: flex;
+
+.sitio-texto1-mini2 {
+    display: flex;
     position: absolute;
-    right:-254px;
+    right: -254px;
 }
+
 /*sitio-texto2*/
 
 /*sitio-texto3*/
-.sitio-texto3{
+.sitio-texto3 {
     display: flex;
     position: absolute;
 }
-.sitio-texto3 p{
+
+.sitio-texto3 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 15px;
     padding: 10px;
     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-.sitio-texto1-mini3{
-        display: flex;
+
+.sitio-texto1-mini3 {
+    display: flex;
     position: absolute;
-    right:-244px;
+    right: -244px;
 }
+
 /*sitio-texto3*/
 
 /*Ultimos proyectos*/
+/*footer*/
+.imagenes-final img {
+    width: 40px;
+}
+
+.imagenes-final {
+    display: flex;
+    gap: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30302f;
+    padding: 10px;
+}
+
+.footer-imagen img {
+    width: 80px;
+}
+
+.footer-imagen {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+
+}
+
+.links-final {
+    display: flex;
+    gap: 50px;
+    padding-right: 40px;
+}
+
+.links-final a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*footer*/
