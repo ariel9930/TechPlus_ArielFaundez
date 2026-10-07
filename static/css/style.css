@@ -1,3 +1,4 @@
+/* RESET GENERAL */
 * {
     padding: 0;
     margin: 0;
@@ -5,34 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*navbar-imagen-titulo*/
-
-.carrusel-contenedor {
-    display: flex;
-    align-items: center;
-
-}
-
-#imagen-carrusel {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.btn-carrusel {
-    background-color: #616161;
-    color: white;
-    border: none;
-    padding: 10px 17px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-
-
-
+/* MENÚ Y LOGO (NAVBAR) */
 .titulo-imagen img {
     width: 80px;
 }
@@ -72,6 +46,7 @@
     font-weight: bold;
 }
 
+/* BUSCADOR DE NAVBAR */
 .inputin {
     padding-right: 30px;
     display: flex;
@@ -82,7 +57,6 @@
     border-radius: 3px;
     border: none;
     border: solid 1px rgb(129, 129, 129);
-
 }
 
 .azul-buscar {
@@ -96,22 +70,19 @@
     font-size: 17px;
 }
 
-/*navbar-imagen-titulo*/
-
+/* CONTENEDOR PRINCIPAL */
 .container {
     background-color: #f6f7f9;
     padding: 40px;
     flex-wrap: wrap;
 }
 
-
-/*imagenes-soporte*/
+/* SECCIÓN PRINCIPAL / HÉROE */
 .soporte-soluciones-imagenes {
     display: flex;
     padding-left: 25px;
     gap: 80px;
     padding: 20px;
-
 }
 
 .imagenes-soporte img {
@@ -140,12 +111,35 @@
     font-size: 17px;
 }
 
-/*imagenes-soporte*/
+/* CARRUSEL DE IMÁGENES */
+.carrusel-contenedor {
+    display: flex;
+    align-items: center;
+}
 
+#imagen-carrusel {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
+.btn-carrusel {
+    background-color: #616161;
+    color: white;
+    border: none;
+    padding: 10px 17px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
 
+/* SECCIÓN NUESTROS SERVICIOS */
+.achedos h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
 
-/*nuestros-servicios*/
 .nuestros-servicios {
     display: flex;
     gap: 40px;
@@ -157,14 +151,21 @@
     height: 150px;
 }
 
-/*soporte*/
-.SOPORTE_TECNICO-TEXTO {
+/* Tarjetas de servicios */
+.SOPORTE_TECNICO-TEXTO,
+.SOPORTE_TECNICO-TEXTO1,
+.SOPORTE_TECNICO-TEXTO2,
+.SOPORTE_TECNICO-TEXTO3 {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border: solid 1px black;
     padding: 10px;
     border-radius: 5px;
+    border: solid 1px black;
+}
+
+.SOPORTE_TECNICO-TEXTO3 img {
+    width: 254px;
 }
 
 .Ver-mas {
@@ -176,79 +177,7 @@
     font-weight: bold;
 }
 
-/*soporte*/
-
-/*soporte1*/
-.SOPORTE_TECNICO-TEXTO1 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-/*soporte1*/
-
-/*soporte2*/
-.SOPORTE_TECNICO-TEXTO2 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-/*soporte2*/
-.achedos h2 {
-    font-weight: bold;
-    font-size: 30px;
-}
-
-/*soporte3*/
-.SOPORTE_TECNICO-TEXTO3 img {
-    width: 254px;
-}
-
-.SOPORTE_TECNICO-TEXTO3 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 1px black;
-}
-
-/*soporte3*/
-/*nuestros-servicios*/
-.ULITMOS-PROYECTOS1 {
-    display: flex;
-    position: relative;
-    border: solid 1px black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.ULITMOS-PROYECTOS2 {
-    display: flex;
-    position: relative;
-    border: solid 1px black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.ULITMOS-PROYECTOS3 {
-    display: flex;
-    position: relative;
-    border: solid 1px black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-/*Ultimos proyectos*/
-
+/* SECCIÓN ÚLTIMOS PROYECTOS */
 .ultimo-texto {
     display: flex;
     justify-content: space-between;
@@ -260,6 +189,12 @@
     color: #0054ef;
     font-weight: bold;
     margin-right: 55px;
+}
+
+.ultimos-proyectos {
+    display: flex;
+    gap: 80px;
+    margin-top: 15px;
 }
 
 .ultimos-proyectos img {
@@ -277,37 +212,36 @@
     background-color: white;
 }
 
-.ultimos-proyectos {
+/* Tarjetas de proyectos */
+.ULITMOS-PROYECTOS1,
+.ULITMOS-PROYECTOS2,
+.ULITMOS-PROYECTOS3 {
     display: flex;
-    gap: 80px;
-    margin-top: 15px;
+    position: relative;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.ultimos-proyectos-imagen1 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.ultimos-proyectos-imagen2 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
+.ultimos-proyectos-imagen1,
+.ultimos-proyectos-imagen2,
 .ultimos-proyectos-imagen3 {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-/*sitio-texto1*/
-.sitio-texto1 {
+/* Etiquetas e insignias flotantes de proyectos */
+.sitio-texto1,
+.sitio-texto2,
+.sitio-texto3 {
     display: flex;
     position: absolute;
 }
 
-.sitio-texto1 p {
+.sitio-texto1 p,
+.sitio-texto2 p,
+.sitio-texto3 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 15px;
@@ -322,44 +256,10 @@
     right: -235px;
 }
 
-/*sitio-texto1*/
-
-/*sitio-texto2*/
-.sitio-texto2 {
-    display: flex;
-    position: absolute;
-}
-
-.sitio-texto2 p {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 15px;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
 .sitio-texto1-mini2 {
     display: flex;
     position: absolute;
     right: -254px;
-}
-
-/*sitio-texto2*/
-
-/*sitio-texto3*/
-.sitio-texto3 {
-    display: flex;
-    position: absolute;
-}
-
-.sitio-texto3 p {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 15px;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .sitio-texto1-mini3 {
@@ -368,19 +268,7 @@
     right: -244px;
 }
 
-/*sitio-texto3*/
-
-/*Ultimos proyectos*/
-/*footer*/
-.imagenes-final img {
-    width: 40px;
-}
-
-.imagenes-final {
-    display: flex;
-    gap: 30px;
-}
-
+/* PIE DE PÁGINA (FOOTER) */
 footer {
     display: flex;
     justify-content: space-between;
@@ -389,16 +277,15 @@ footer {
     padding: 10px;
 }
 
-.footer-imagen img {
-    width: 80px;
-}
-
 .footer-imagen {
     display: flex;
     gap: 10px;
     align-items: center;
     color: white;
+}
 
+.footer-imagen img {
+    width: 80px;
 }
 
 .links-final {
@@ -413,4 +300,11 @@ footer {
     font-weight: bold;
 }
 
-/*footer*/
+.imagenes-final {
+    display: flex;
+    gap: 30px;
+}
+
+.imagenes-final img {
+    width: 40px;
+}
