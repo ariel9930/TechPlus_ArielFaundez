@@ -1,3 +1,4 @@
+/* RESET GENERAL */
 * {
     padding: 0;
     margin: 0;
@@ -5,13 +6,117 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*navbar-imagen-titulo*/
+/* MENÚ Y LOGO (NAVBAR) */
+.titulo-imagen img {
+    width: 80px;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo-imagen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.azul {
+    color: #0054ef;
+}
+
+.links-inicios {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.subrayado {
+    border-bottom: solid 3px blue;
+    padding-bottom: 8px;
+}
+
+.links-inicios a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* BUSCADOR DE NAVBAR */
+.inputin {
+    padding-right: 30px;
+    display: flex;
+}
+
+.inputin input {
+    width: 300px;
+    border-radius: 3px;
+    border: none;
+    border: solid 1px rgb(129, 129, 129);
+}
+
+.azul-buscar {
+    background-color: #0054ef;
+    border: none;
+    height: 40px;
+    width: 90px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    background-color: #f6f7f9;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* SECCIÓN PRINCIPAL / HÉROE */
+.soporte-soluciones-imagenes {
+    display: flex;
+    padding-left: 25px;
+    gap: 80px;
+    padding: 20px;
+}
+
+.imagenes-soporte img {
+    width: 600px;
+}
+
+.soporte-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.soporte-texto h1 {
+    font-size: 60px;
+}
+
+.ver-servicios {
+    width: 160px;
+    height: 35px;
+    color: white;
+    background-color: #30302f;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* CARRUSEL DE IMÁGENES */
 .carrusel-contenedor {
     display: flex;
     align-items: center;
-    padding: 20px;
 }
+
 #imagen-carrusel {
     width: 500px;
     height: 300px;
@@ -29,129 +134,177 @@
     border-radius: 50%;
 }
 
-
-
-
-.titulo-imagen img {
-    width: 80px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.titulo-imagen {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 20px;
-}
-
-.azul {
-    color: #0054ef;
-}
-
-.links-inicios {
-    display: flex;
-    gap: 50px;
-}
-
-.links-inicios a {
-    text-decoration: none;
-    color: black;
+/* SECCIÓN NUESTROS SERVICIOS */
+.achedos h2 {
     font-weight: bold;
+    font-size: 30px;
 }
 
-.inputin {
-    padding-right: 30px;
+.nuestros-servicios {
     display: flex;
+    gap: 40px;
+    padding-top: 15px;
 }
 
-.inputin input {
-    width: 300px;
-    border-radius: 3px;
-    border: none;
-    border: solid 1px rgb(129, 129, 129);
-
+.nuestros-servicios img {
+    width: 250px;
+    height: 150px;
 }
 
-.azul-buscar {
-    background-color: #0054ef;
-    border: none;
-    height: 40px;
-    width: 90px;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 17px;
-}
-
-/*navbar-imagen-titulo*/
-
-.container {
-    background-color: #f6f7f9;
-}
-
-
-/*imagenes-soporte*/
-.soporte-soluciones-imagenes {
-    display: flex;
-    margin: 25px;
-    padding-left: 25px;
-    gap: 80px;
-    padding: 20px;
-}
-
-.imagenes-soporte img {
-    width: 600px;
-}
-
-.soporte-texto {
+/* Tarjetas de servicios */
+.SOPORTE_TECNICO-TEXTO,
+.SOPORTE_TECNICO-TEXTO1,
+.SOPORTE_TECNICO-TEXTO2,
+.SOPORTE_TECNICO-TEXTO3 {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-size: 25px;
-}
-
-.soporte-texto h1 {
-    font-size: 60px;
-}
-
-.ver-servicios {
-    width: 160px;
-    height: 35px;
-    color: white;
-    background-color: #30302f;
-    border: none;
+    gap: 5px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 17px;
+    border: solid 1px black;
 }
 
-/*imagenes-soporte*/
-
-
-
-
-/*nuestros-servicios*/
-.nuestros-servicios img {
-    width: 300px;
+.SOPORTE_TECNICO-TEXTO3 img {
+    width: 254px;
 }
 
-/*nuestros-servicios*/
+.Ver-mas {
+    border: none;
+    background-color: #f6f7f9;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 35px;
+    font-weight: bold;
+}
 
+/* SECCIÓN ÚLTIMOS PROYECTOS */
+.ultimo-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 20px;
+}
 
+.ver-todos {
+    color: #0054ef;
+    font-weight: bold;
+    margin-right: 55px;
+}
 
+.ultimos-proyectos {
+    display: flex;
+    gap: 80px;
+    margin-top: 15px;
+}
 
-
-/*Ultimos proyectos*/
 .ultimos-proyectos img {
-    width: 300px;
+    width: 320px;
 }
 
 .corazon img {
     width: 20px;
 }
 
-/*Ultimos proyectos*/
+.corazon {
+    border-radius: 5px;
+    border: none;
+    border: solid 1px gray;
+    background-color: white;
+}
+
+/* Tarjetas de proyectos */
+.ULITMOS-PROYECTOS1,
+.ULITMOS-PROYECTOS2,
+.ULITMOS-PROYECTOS3 {
+    display: flex;
+    position: relative;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.ultimos-proyectos-imagen1,
+.ultimos-proyectos-imagen2,
+.ultimos-proyectos-imagen3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Etiquetas e insignias flotantes de proyectos */
+.sitio-texto1,
+.sitio-texto2,
+.sitio-texto3 {
+    display: flex;
+    position: absolute;
+}
+
+.sitio-texto1 p,
+.sitio-texto2 p,
+.sitio-texto3 p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.sitio-texto1-mini1 {
+    display: flex;
+    position: absolute;
+    right: -235px;
+}
+
+.sitio-texto1-mini2 {
+    display: flex;
+    position: absolute;
+    right: -254px;
+}
+
+.sitio-texto1-mini3 {
+    display: flex;
+    position: absolute;
+    right: -244px;
+}
+
+/* PIE DE PÁGINA (FOOTER) */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #30302f;
+    padding: 10px;
+}
+
+.footer-imagen {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.footer-imagen img {
+    width: 80px;
+}
+
+.links-final {
+    display: flex;
+    gap: 50px;
+    padding-right: 40px;
+}
+
+.links-final a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.imagenes-final {
+    display: flex;
+    gap: 30px;
+}
+
+.imagenes-final img {
+    width: 40px;
+}

@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
     <header>
         <nav class="navbar">
+            <!-- Logo y nombre de la marca -->
             <div class="titulo-imagen">
                 <img src="static/img/computador.png" alt="computador">
                 <div class="techplus">
@@ -19,63 +21,70 @@
                     <p>Soluciones informáticas</p>
                 </div>
             </div>
+            <!-- Menú principal de enlaces -->
             <div class="links-inicios">
-                <a href="#">Inicio</a>
+                <span class="subrayado"><a href="#">Inicio</a></span>
                 <a href="#">Servicios</a>
                 <a href="#">Proyectos</a>
-                <a href="#">Contactos</a>
+                <a href="#">Contacto</a>
             </div>
+            <!-- Barra de búsqueda -->
             <div class="inputin">
                 <input type="text" placeholder="Buscar servicios...">
                 <button class="azul-buscar">Buscar</button>
             </div>
         </nav>
     </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
+
+        <!-- SECCIÓN HÉROE / BANNER CON CARRUSEL -->
         <section class="soporte-soluciones-imagenes">
+            <!-- Texto de bienvenida y llamado a la acción -->
             <div class="soporte-texto">
                 <p>SOPORTE Y SOLUCIONES</p>
                 <h1>Tecnología que impulsa tu negocio</h1>
                 <p>Soporte, desarrollo y asesoría informática<br>para empresas y personas.</p>
                 <button class="ver-servicios">Ver servicios ➔</button>
-
             </div>
+            <!-- Carrusel de imágenes -->
             <div class="imagenes-soporte">
                 <div class="carrusel-contenedor">
-
-                    <!-- Botón Izquierdo (resta 1) -->
                     <button onclick="cambiarImagen(-1)" class="btn-carrusel">❮</button>
-
-                    <!-- Imagen central -->
                     <img id="imagen-carrusel" src="https://picsum.photos/id/1018/600/400" alt="Paisaje">
-
-                    <!-- Botón Derecho (suma 1) -->
                     <button onclick="cambiarImagen(1)" class="btn-carrusel">❯</button>
-
                 </div>
-
             </div>
         </section>
-        <section class="nuestros-servicios">
+
+        <!-- SECCIÓN DE SERVICIOS -->
+        <div class="achedos">
             <h2>Nuestros servicios</h2>
+        </div>
+        <section class="nuestros-servicios">
+            <!-- Tarjeta 1: Soporte técnico -->
             <div class="SOPORTE_TECNICO-TEXTO">
                 <img src="static/img/soporte-tecnico.jpg" alt="tecnico">
                 <h3>Soporte técnico</h3>
                 <p>Mantención, diagnóstico<br>y soluciones rápidas.</p>
                 <button class="Ver-mas">Ver más</button>
             </div>
+            <!-- Tarjeta 2: Redes -->
             <div class="SOPORTE_TECNICO-TEXTO1">
                 <img src="static/img/redes_conectividad.jpg" alt="redes">
                 <h3>Redes y conectividad</h3>
                 <p>Instalación y configuración<br>de redes corporativas.</p>
                 <button class="Ver-mas">Ver más</button>
             </div>
+            <!-- Tarjeta 3: Desarrollo Web -->
             <div class="SOPORTE_TECNICO-TEXTO2">
                 <img src="static/img/desarrollo-web.jpg" alt="desarrollo-web">
                 <h3>Desarrollo web</h3>
                 <p>Sitios web modernos<br>y funcionales.</p>
                 <button class="Ver-mas">Ver más</button>
             </div>
+            <!-- Tarjeta 4: Seguridad -->
             <div class="SOPORTE_TECNICO-TEXTO3">
                 <img src="static/img/blog-seguridad-informatica.webp" alt="seguridad">
                 <h3>Seguridad informática</h3>
@@ -84,16 +93,20 @@
             </div>
         </section>
 
+        <!-- SECCIÓN DE PROYECTOS -->
+        <div class="ultimo-texto">
+            <h2>Últimos proyectos</h2>
+            <p><span class="ver-todos">Ver todos ➔</span></p>
+        </div>
+
         <section class="ultimos-proyectos">
-            <div class="ultimo-texto">
-                <h2>Últimos proyectos</h2>
-                <p>Ver todos ➔</p>
-            </div>
+            <!-- Proyecto 1 -->
             <div class="ULITMOS-PROYECTOS1">
                 <div class="sitio-texto1">
                     <p>Sitio web</p>
-                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
-                            alt="corazon-pelao"> 24</button>
+                    <div class="sitio-texto1-mini1">
+                        <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png" alt="corazon-pelao"> 24</button>
+                    </div>
                 </div>
                 <div class="ultimos-proyectos-imagen1">
                     <img src="static/img/clinica-vida.png" alt="clinica">
@@ -102,11 +115,13 @@
                 </div>
             </div>
 
+            <!-- Proyecto 2 -->
             <div class="ULITMOS-PROYECTOS2">
                 <div class="sitio-texto2">
                     <p>Redes</p>
-                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
-                            alt="corazon-pelao"> 17</button>
+                    <div class="sitio-texto1-mini2">
+                        <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png" alt="corazon-pelao"> 17</button>
+                    </div>
                 </div>
                 <div class="ultimos-proyectos-imagen2">
                     <img src="static/img/clinica-vida.png" alt="comercial norte">
@@ -115,11 +130,13 @@
                 </div>
             </div>
 
+            <!-- Proyecto 3 -->
             <div class="ULITMOS-PROYECTOS3">
                 <div class="sitio-texto3">
                     <p>Soporte</p>
-                    <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png"
-                            alt="corazon-pelao"> 31</button>
+                    <div class="sitio-texto1-mini3">
+                        <button class="corazon"><img src="static/img/corazon-pelao-removebg-preview.png" alt="corazon-pelao"> 31</button>
+                    </div>
                 </div>
                 <div class="ultimos-proyectos-imagen3">
                     <img src="static/img/clinica-vida.png" alt="clinica">
@@ -129,6 +146,32 @@
             </div>
         </section>
     </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <!-- Logo y texto del footer -->
+        <div class="footer-imagen">
+            <img src="static/img/computador.png" alt="computador">
+            <div class="footer-texto">
+                <h1>TechPlus</h1>
+                <p>Soluciones informáticas</p>
+            </div>
+        </div>
+        <!-- Enlaces del footer -->
+        <div class="links-final">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </div>
+        <!-- Redes sociales -->
+        <div class="imagenes-final">
+            <img src="static/img/linkedin.55-removebg-preview.png" alt="linkedin">
+            <img src="static/img/Instagram_icon-removebg-preview.png" alt="instagram">
+            <img src="static/img/Facebook_f_logo__2019_-removebg-preview.png" alt="facebook">
+        </div>
+    </footer>
+
     <script src="static/js/script.js"></script>
 </body>
 
